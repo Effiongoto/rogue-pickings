@@ -59,7 +59,10 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 38px 0;
+	padding: 18px 0;
+	border-bottom: 3px solid #77a466;
+	width: 100%;
+	text-align: center;
 }
 header h1 span {
 	color: #77a466;
@@ -206,5 +209,10 @@ footer span {
 	header nav ul {
 		display: flex;
 		justify-content: space-between;
+	}
+	header h1{
+		padding: 38px 0;
+		border-bottom: 0px;
+		text-align: left;
 	}
 }
