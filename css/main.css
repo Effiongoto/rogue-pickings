@@ -48,6 +48,7 @@ p {
 /*The widths are in a percentage!*/
 header {
 	height: auto;
+	width: 100%;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
@@ -138,13 +139,8 @@ header nav ul li a{
 
 
 /*
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-.section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
+
+
 }*/
 
 .menu {
@@ -170,9 +166,9 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 footer {
 	height: 50px;
+	width: 100%;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
-	clear: both;
 	text-align: center;
 }
 footer span {
@@ -182,6 +178,33 @@ footer span {
 	font-size: 14px;
 }
 
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+	.bottom-section{
+		display: flex;
+		flex-flow: row;
+	}
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+	.section-two,
+	.section-three {
+		padding: 10px 30px;
+	}
 
-@media (min-width: 1200px)
-@media (min-width: 768px)
+ 
+@media all and (min-width:1200px) {
+	/* Desktop styles here */
+	header{
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin: 0;
+	}
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+}
